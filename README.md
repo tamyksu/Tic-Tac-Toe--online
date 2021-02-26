@@ -9,3 +9,7 @@ Choosing Icon:
 
 ![image](https://user-images.githubusercontent.com/57362830/109288450-8bd84500-782d-11eb-9836-e18c5aade2b9.png)
 
+Game:
+
+![image](https://user-images.githubusercontent.com/57362830/109288728-ee314580-782d-11eb-8498-e051d2dcb97e.png)
+
