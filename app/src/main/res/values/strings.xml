@@ -1,3 +1,36 @@
 <resources>
-    <string name="app_name">tic tac toe</string>
+    <string name="app_name">Tic Tac Toe</string>
+
+    //activity main
+    <string name="login">login</string>
+    <string name="registration">registration</string>
+    <string name="FR_button">put rival in waiting room</string>
+    <string name="user1_email">d@gmail.com</string>
+    <string name="user1_password">12345678</string>
+    <string name="user2_email">aa@gmail.com</string>
+    <string name="user2_password">123123123</string>
+    //activity main
+
+    //activity menu
+    <string name="profile">User Profile</string>
+    <string name="score">Score:</string>
+    <string name="x">X:</string>
+    <string name="o">O:</string>
+    <string name="play">PLAY</string>
+    //activity menu
+
+    //activity register
+    <string name="register_button">REGISTER</string>
+    //activity register
+
+    //activity typeGame
+    <string name="home">HOME</string>
+    <string name="play_again">play again</string>
+    <string name="victory">Victory!</string>
+    <string name="you_lost">You Lost!</string>
+    <string name="waiting_for_rival">Waiting for rival...</string>
+    <string name="your_move">Your Move</string>
+    <string name="draw">Draw!</string>
+    //activity typeGame
+
 </resources>

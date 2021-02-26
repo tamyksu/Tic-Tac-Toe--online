@@ -7,27 +7,43 @@
     tools:context=".RegisterActivity">
 
     <LinearLayout
-        android:layout_width="402dp"
-        android:layout_height="320dp"
+        android:layout_width="334dp"
+        android:layout_height="306dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.176">
+        app:layout_constraintVertical_bias="0.392">
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:baselineAligned="false"
+            android:hint="Nickname"
+            android:inputType="textPersonName"
+            android:visibility="visible" />
 
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:hint="Email"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="#0E0E0E"
+            android:visibility="visible" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword" />
@@ -37,7 +53,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="Register" />
+            android:text="@string/register_button" />
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/registerBackButton"
+        android:layout_width="54dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00000000"
+        android:onClick="backToMainActivity"
+        android:scaleType="fitXY"
+        android:tint="#5E5E5E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

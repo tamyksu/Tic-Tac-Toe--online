@@ -6,23 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.616">
+
+        <EditText
+            android:id="@+id/email1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:fontFamily="casual"
+            android:hint="Email"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/password1"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:fontFamily="casual"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#3F6AB5"
+            android:backgroundTint="#F37676"
+            android:drawableTint="#974848"
+            android:fontFamily="casual"
+            android:foregroundTint="#781818"
+            android:onClick="loginButton"
+            android:shadowColor="#7A1818"
+            android:text="@string/login"
+            android:textColor="#FFFCFC"
+            android:textStyle="bold"
+            app:strokeColor="#BF4545" />
+
+        <Button
+            android:id="@+id/registration"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="casual"
+            android:onClick="registrationButton"
+            android:text="@string/registration"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
     <Button
-        android:id="@+id/registration"
-        android:layout_width="170dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="332dp"
-        android:text="Registration"
+        android:id="@+id/button"
+        android:layout_width="301dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="44dp"
+        android:foregroundGravity="center_horizontal"
+        android:onClick="tests"
+        android:text="@string/FR_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/login"
-        android:layout_width="170dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="176dp"
-        android:text="Log-in"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
